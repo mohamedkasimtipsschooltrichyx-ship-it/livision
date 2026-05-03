@@ -1,0 +1,107 @@
+.topframe{
+    background-color: #000000;
+    color: rgb(255, 0, 0);
+    padding: 10px;
+    text-shadow: 2px 2px 4px #000000;
+    border: 2px solid white;
+    font-size: large; 
+    text-align:center;
+    display:flex;
+    border-radius: 15px;
+}
+.a{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.b{
+    margin-left: 10px;
+    margin-right: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: xx-large;
+    font-display: swap;
+    border-color: antiquewhite;
+    padding: 10px;
+    border-radius: 15px;
+}
+.mainframe{
+    margin-top: 20px;
+    background-color: #000000;
+    color: rgb(255, 0, 0);
+    padding: 20px;
+    font-size: medium; 
+    text-align: left;
+    text-shadow: 2px 2px 4px #000000;
+    border: 2px solid white;
+    border-radius: 15px;
+    width:fit-content;
+}
+body{
+    color: rgb(255, 0, 0);
+    font-family: jetbrains mono, monospace;   
+}
+.partone{
+    background-color: #000000;
+    color: rgb(255, 0, 0);
+    padding: 20px;
+    font-size: medium; 
+    text-align: left;
+    text-shadow: 2px 2px 4px #000000;
+    border: 2px solid white;
+    display:flex;
+}
+.c{
+    margin-left: 20px;
+    margin-right: 20px;
+    color: yellowgreen;
+}
+.internationalnews{
+    background-color: #000000;
+    color: rgb(255, 0, 0);
+    padding: 20px;
+    font-size: small; 
+    text-align: left;
+    text-shadow: 2px 2px 4px #000000;
+    border: 2px solid white;
+    display:flex;
+}
+.news{
+    margin-left: 20px;
+    margin-right: 20px;
+    color: yellowgreen;
+    font-size: small;
+    border: 2px solid white;
+}
+img{
+    width: 350px;
+    height: 300px;
+}
+.nationalnews{
+    background-color: #000000;
+    color: rgb(255, 0, 0);
+    padding: 20px;
+    font-size: small; 
+    text-align: left;
+    text-shadow: 2px 2px 4px #000000;
+    border: 2px solid white;
+    display: flex;
+}
+.sportsnews{
+    background-color: #000000;
+    color: rgb(255, 0, 0);
+    padding: 20px;
+    font-size: small; 
+    text-align: left;
+    text-shadow: 2px 2px 4px #000000;
+    border: 2px solid white;
+    display: flex;
+}
+.entertainmentnews{
+    background-color: #000000;
+    color: rgb(255, 0, 0);
+    padding: 20px;
+    font-size: small; 
+    text-align: left;
+    text-shadow: 2px 2px 4px #000000;
+    border: 2px solid white;
+    display: flex;
+}
