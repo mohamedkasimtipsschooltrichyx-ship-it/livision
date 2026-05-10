@@ -37,7 +37,8 @@
 }
 body{
     color: rgb(255, 0, 0);
-    font-family: jetbrains mono, monospace;   
+    font-family: jetbrains mono, monospace; 
+    transform: scale(100%) 
 }
 .partone{
     background-color: #000000;
