@@ -1,6 +1,6 @@
-.topframe{
+#topframe{
     background-color: #000000;
-    color: rgb(255, 0, 0);
+    color: rgb(255, 253, 253);
     padding: 10px;
     text-shadow: 2px 2px 4px #000000;
     border: 2px solid white;
@@ -23,10 +23,10 @@
     padding: 10px;
     border-radius: 15px;
 }
-.mainframe{
+#mainframe{
     margin-top: 20px;
     background-color: #000000;
-    color: rgb(255, 0, 0);
+    color: rgb(255, 246, 246);
     padding: 20px;
     font-size: medium; 
     text-align: left;
@@ -36,13 +36,13 @@
     width:fit-content;
 }
 body{
-    color: rgb(255, 0, 0);
+    color: rgb(232, 232, 232);
     font-family: jetbrains mono, monospace; 
     transform: scale(100%) 
 }
 .partone{
     background-color: #000000;
-    color: rgb(255, 0, 0);
+    color: rgb(46, 255, 4);
     padding: 20px;
     font-size: medium; 
     text-align: left;
@@ -53,11 +53,10 @@ body{
 .c{
     margin-left: 20px;
     margin-right: 20px;
-    color: yellowgreen;
 }
 .internationalnews{
     background-color: #000000;
-    color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
     padding: 20px;
     font-size: small; 
     text-align: left;
@@ -68,7 +67,6 @@ body{
 .news{
     margin-left: 20px;
     margin-right: 20px;
-    color: yellowgreen;
     font-size: small;
     border: 2px solid white;
 }
@@ -78,7 +76,7 @@ img{
 }
 .nationalnews{
     background-color: #000000;
-    color: rgb(255, 0, 0);
+    color: rgb(255, 225, 255);
     padding: 20px;
     font-size: small; 
     text-align: left;
@@ -88,7 +86,7 @@ img{
 }
 .sportsnews{
     background-color: #000000;
-    color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
     padding: 20px;
     font-size: small; 
     text-align: left;
@@ -98,11 +96,43 @@ img{
 }
 .entertainmentnews{
     background-color: #000000;
-    color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
     padding: 20px;
     font-size: small; 
     text-align: left;
     text-shadow: 2px 2px 4px #000000;
     border: 2px solid white;
     display: flex;
+}
+.partthree{
+    padding: 20px;
+    font-size: medium; 
+    text-align: left;
+    text-shadow: 2px 2px 4px #000000;
+    border: 2px solid white;
+}
+.footer{
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    font-size: small; 
+    text-align: center;
+    text-shadow: 2px 2px 4px #000000;
+    border: 2px solid white;
+}
+.footer button{
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    font-size: small; 
+    text-align: center;
+    text-shadow: 2px 2px 4px #000000;
+    border: 2px solid white;
+    border-radius: 15px;
+}
+.footer button:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: 2px solid white;
+    border-radius: 15px;
 }
