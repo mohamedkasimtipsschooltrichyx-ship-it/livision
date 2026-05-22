@@ -9,6 +9,70 @@
 </head>
 
 <body background="fah.png" id="contrast-upd">
+
+      <div class="header">
+
+
+      <div class="network-status" id="network-status">
+            <p id="network-status-text">Checking network status...</p>
+      </div>
+
+
+      <script>
+            function updateNetworkStatus() {
+                  const networkStatusElement = document.getElementById('network-status');
+                  const networkStatusText = document.getElementById('network-status-text');
+                  if (navigator.onLine) {
+                        networkStatusElement.style.backgroundColor = 'green';
+                        networkStatusText.textContent = 'You are online';
+                  } else {
+                        networkStatusElement.style.backgroundColor = 'red';
+                        networkStatusText.textContent = 'You are offline';
+                  }
+            }
+
+            window.addEventListener('online', updateNetworkStatus);
+            window.addEventListener('offline', updateNetworkStatus);
+            updateNetworkStatus(); // Initial check
+      </script>
+
+
+      <div class="clock" id="clock">
+            <!-- Clock will be displayed here -->
+      </div>
+
+  
+      <script>
+             function Clock() {
+      const now = new Date();
+
+      // Hours, minutes, seconds
+      let hours = now.getHours();
+      let minutes = String(now.getMinutes()).padStart(2, '0');
+      let seconds = String(now.getSeconds()).padStart(2, '0');
+
+      // AM/PM
+      let ampm = hours >= 12 ? 'PM' : 'AM';
+      hours = hours % 12 || 12;
+
+      // Automatically detect system time zone abbreviation
+      const formatter = new Intl.DateTimeFormat(undefined, {
+        timeZoneName: "short"
+      });
+      const tz = formatter.formatToParts(now).find(p => p.type === "timeZoneName").value;
+
+      // Display formatted time with zone
+      document.getElementById('clock').textContent =
+        `${hours}:${minutes}:${seconds} ${ampm} ${tz}`;
+    }
+
+    setInterval(Clock, 1000);
+    Clock(); // initial call
+
+      </script>
+
+      </div>
+
       <div id="topframe">
 
             <div class="partone">
@@ -33,8 +97,8 @@
 
             <div class="partthree">
                   <p class="c">Livision : Windows of the world</p>
-                  <p class="c">Updated: Added contrast settings at the footer, updated the news sections, reframed the layout </p>
-                  <p class="c"> Update 1.2.0
+                  <p class="c">Updated: Added clock and network status indicators</p>
+                  <p class="c"> Update 1.3.0
                   </p>
             </div>
 
@@ -263,6 +327,16 @@
                         entertainmentNewsElements[i].style.borderColor = "black";
                   }
 
+                  // clock and network status
+
+                  let clockElement = document.getElementById("clock");
+                  clockElement.style.color = "black";
+                  clockElement.style.backgroundColor = "white";
+
+                  let networkStatusElement = document.getElementById("network-status");
+                  networkStatusElement.style.color = "black";
+                  networkStatusElement.style.backgroundColor = "white";
+
 
             }
 
@@ -332,10 +406,22 @@
                         entertainmentNewsElements[i].style.borderColor = "white";
                   }
 
+                  // clock and network status
+
+                  let clockElement = document.getElementById("clock");
+                  clockElement.style.color = "white";
+                  clockElement.style.backgroundColor = "black";   
+
+                  let net = document.getElementById("network-status");
+                  net.style.color = "white";
+                  net.style.backgroundColor = "black";      
+
             }
+            
+
 
       </script>
 
 </body>
 
-</html> 
+</html>
