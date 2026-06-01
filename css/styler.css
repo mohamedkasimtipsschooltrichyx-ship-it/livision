@@ -38,7 +38,7 @@
 }
 body{
     color: rgb(232, 232, 232);
-    font-family: jetbrains mono, monospace; 
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     transform: scale(100%) 
 }
 .partone{
@@ -68,8 +68,25 @@ body{
 .news{
     margin-left: 20px;
     margin-right: 20px;
-    font-size: small;
+    font-size: large;
     border: 2px solid white;
+}
+.news:hover{
+    border: 2px solid rgb(2, 2, 2);
+    animation: a 2ms infinite alternate;
+}
+@keyframes a {
+    0% {
+        scale: 1;
+    }
+    50% {
+        scale: 1.01;
+    }
+    100% {
+        scale: 1;
+
+    }
+    
 }
 img{
     width: 350px;
@@ -168,4 +185,9 @@ header{
     text-shadow: 2px 2px 4px #000000;
     border: 2px solid white;
     border-radius: 15px;
+}
+a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size  : large;
 }
