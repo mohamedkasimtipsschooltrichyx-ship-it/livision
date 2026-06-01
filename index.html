@@ -1,12 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Document</title>
-      <link rel="stylesheet" href="css/styler.css">
-</head>
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title><link rel="stylesheet" href="css/styler.css"></head>
 
 <body background="fah.png" id="contrast-upd">
 
@@ -17,59 +10,10 @@
             <p id="network-status-text">Checking network status...</p>
       </div>
 
-
-      <script>
-            function updateNetworkStatus() {
-                  const networkStatusElement = document.getElementById('network-status');
-                  const networkStatusText = document.getElementById('network-status-text');
-                  if (navigator.onLine) {
-                        networkStatusElement.style.backgroundColor = 'green';
-                        networkStatusText.textContent = 'You are online';
-                  } else {
-                        networkStatusElement.style.backgroundColor = 'red';
-                        networkStatusText.textContent = 'You are offline';
-                  }
-            }
-
-            window.addEventListener('online', updateNetworkStatus);
-            window.addEventListener('offline', updateNetworkStatus);
-            updateNetworkStatus(); // Initial check
-      </script>
-
-
       <div class="clock" id="clock">
             <!-- Clock will be displayed here -->
       </div>
 
-  
-      <script>
-             function Clock() {
-      const now = new Date();
-
-      // Hours, minutes, seconds
-      let hours = now.getHours();
-      let minutes = String(now.getMinutes()).padStart(2, '0');
-      let seconds = String(now.getSeconds()).padStart(2, '0');
-
-      // AM/PM
-      let ampm = hours >= 12 ? 'PM' : 'AM';
-      hours = hours % 12 || 12;
-
-      // Automatically detect system time zone abbreviation
-      const formatter = new Intl.DateTimeFormat(undefined, {
-        timeZoneName: "short"
-      });
-      const tz = formatter.formatToParts(now).find(p => p.type === "timeZoneName").value;
-
-      // Display formatted time with zone
-      document.getElementById('clock').textContent =
-        `${hours}:${minutes}:${seconds} ${ampm} ${tz}`;
-    }
-
-    setInterval(Clock, 1000);
-    Clock(); // initial call
-
-      </script>
 
       </div>
 
@@ -97,12 +41,31 @@
 
             <div class="partthree">
                   <p class="c">Livision : Windows of the world</p>
-                  <p class="c">Updated: Added clock and network status indicators</p>
-                  <p class="c"> Update 1.3.0
+                  <p class="c">Updated: Modified layout and updated the news</p>
+                  <p class="c"> Update 1.3.1
                   </p>
             </div>
 
       </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -117,28 +80,26 @@
 
                   <div class="news">
                         <div class="newsimage">
-                              <img src="dasboard1/inte1.webp">
+                              <img src="uncle/a.jpg" alt="U.S. President Donald Trump speaks during a State Dinner with Britain's King Charles III | Photo Credit: AP" abbr="U.S. President Donald Trump speaks during a State Dinner with Britain's King Charles III | Photo Credit: AP">
                         </div>
                         <div class="newscontent">
-                              <h1>Russia-China Axis Strengthens: Putin Calls Ties A Force For 'Peace And Prosperity'
-                              </h1>
+                              <a href="https://www.thehindu.com/news/international/iran-israel-war-live-trump-ceasefire-talks-strait-of-hormuz-updates-april-29-2026/article70918966.ece">Israel-Iran war updates: Jaishankar holds talks with Iran's Foreign Minister on West Asia situation</a>                              
                         </div>
                   </div>
                   <div class="news">
                         <div class="newsimage">
-                              <img src="dasboard1/inte2.webp">
+                              <img src="uncle/b.jfif" alt="Cuba's dependence on oil is structural as it accounts for 83% of total power generation and oil products make up 56% of total energy consumption across industry, transport, agriculture and households. | Photo Credit: Reuters" abbr="Cuba's dependence on oil is structural as it accounts for 83% of total power generation and oil products make up 56% of total energy consumption across industry, transport, agriculture and households. | Photo Credit: Reuters">
                         </div>
                         <div class="newscontent">
-                              <h1>Hormuz Ship Traffic Rebounds After Weeks of Wartime Disruption</h1>
+                              <a href="https://www.thehindu.com/news/international/trumps-oil-blockade-pushes-cuba-to-the-brink/article70591340.ece">Trump's oil blockade pushes Cuba to the brink</a>
                         </div>
                   </div>
                   <div class="news">
                         <div class="newsimage">
-                              <img src="dasboard1/inte3.webp">
+                              <img src="uncle/c.jfif" alt="Spain's Prime Minister Pedro Sanchez. File picture | Photo Credit: Reuters" abbr="Spain's Prime Minister Pedro Sanchez. File picture | Photo Credit: Reuters">
                         </div>
                         <div class="newscontent">
-                              <h1>Five Killed In San Diego's Largest Mosque: What We Know About The Targeted Islamic
-                                    Centre</h1>
+                              <a href="https://www.thehindu.com/news/international/spain-pm-keeps-backing-ex-leader-targeted-in-graft-probe/article71030575.ece#google_vignette">Spain PM keeps backing ex-leader targeted in graft probe</a>
                         </div>
                   </div>
             </div>
@@ -151,32 +112,29 @@
                   <div class="news">
 
                         <div class="newsimage">
-                              <img src="dasboard1/in1.jfif">
+                              <img src="uncle/jee.jfif" alt="Students walk out of the examination centre after appearing for the Joint Entrance Examination (JEE) Advanced 2026." abbr="Students walk out of the examination centre after appearing for the Joint Entrance Examination (JEE) Advanced 2026.">
                         </div>
                         <div class="newscontent">
-                              <h1>Will remain committed to Tamil Nadu's two-language policy in schools: TVK Minister
-                                    Rajmohan</h1>
+                              <h1>JEE Advanced 2026 results: Shubham Kumar secures AIR 1; over 56,000 qualify</h1>
                         </div>
 
                   </div>
                   <div class="news">
 
                         <div class="newsimage">
-                              <img src="dasboard1/in2.jfif">
+                              <img src="uncle/supreme-court.jpg" alt="A view of the Supreme Court of India in New Delhi" abbr="A view of the Supreme Court of India in New Delhi">
                         </div>
                         <div class="newscontent">
-                              <h1>Rahul Gandhi takes dig at PM Modi on Norway pension fund dropping Adani shares from
-                                    portfolio</h1>
+                              <h1>Supreme Court gets 5 new judges; strength to go up to 37</h1>
                         </div>
 
                   </div>
                   <div class="news">
                         <div class="newsimage">
-                              <img src="dasboard1/in3.jpg">
+                              <img src="uncle/rahul-gandhi-with-cbse-students.jpg" alt="LoP in Lok Sabha Rahul Gandhi during an interaction with CBSE board students, on May 31, 2026. " abbr="LoP in Lok Sabha Rahul Gandhi during an interaction with CBSE board students, on May 31, 2026. ">
                         </div>
                         <div class="newscontent">
-                              <h1>Delhi Police may seek larger Bench reference on UAPA bail curbs amid 'conflicting'
-                                    coordinate Bench rulings</h1>
+                              <h1>'Beware of pickpockets': Rahul slams Govt. over CBSE re-evaluation cost</h1>
                         </div>
                   </div>
             </div>
@@ -188,28 +146,26 @@
                   </div>
                   <div class="news">
                         <div class="newsimage">
-                              <img src="dasboard1/sp1.jfif">
+                              <img src="uncle/NorwayChess.jpg" alt="R. Praggnanandhaa in action against American Wesley So at the Norway Chess championship on May 31, 2026. " abbr="R. Praggnanandhaa in action against American Wesley So at the Norway Chess championship on May 31, 2026. ">
                         </div>
                         <div class="newscontent">
-                              <h1>India vs Afghanistan series: Rishabh Pant dropped from ODI squad, loses Test
-                                    vice-captaincy to Rahul</h1>
+                              <h1>Norway Chess: Indian quartet endures miserable day as all four suffer defeats</h1>
                         </div>
                   </div>
                   <div class="news">
                         <div class="newsimage">
-                              <img src="dasboard1/sp2.jfif">
+                              <img src="uncle/Rajat-Patidar.jfif" alt="RCB Captain Rajat Patidar holding the IPL 2026 trophy. " abbr="RCB Captain Rajat Patidar holding the IPL 2026 trophy. ">
                         </div>
                         <div class="newscontent">
-                              <h1>Duplantis wins in Shanghai, fails to beat record as Warholm stunned</h1>
+                              <h1>IPL 2026: "We have not just played, we dominated this year,"says RCB skipper Patidar</h1>
                         </div>
                   </div>
                   <div class="news">
                         <div class="newsimage">
-                              <img src="dasboard1/sp3.jfif">
+                              <img src="uncle/foot.jpg" alt="Czech Republic's Hugo Sochurek. " abbr="Czech Republic's Hugo Sochurek. ">
                         </div>
                         <div class="newscontent">
-                              <h1>IPL 2026: Big transition for Ruturaj the captain; will take time, says coach Fleming
-                              </h1>
+                              <h1>FIFA World Cup: Czech Republic's final squad includes 17-year-old Hugo Sochurek</h1>
                         </div>
                   </div>
             </div>
@@ -221,26 +177,26 @@
                   </div>
                   <div class="news">
                         <div class="newsimage">
-                              <img src="dasboard1/ent1.jpg">
+                              <img src="uncle/TECH_PIC_MALAYSIA_FLAGS.jfif" alt="Companies that fail to comply could face penalties of up to 10 million ringgit.In terms of dollars, that's about $2.5 million fine for social media accounts for children younger than 16. " abbr="Companies that fail to comply could face penalties of up to 10 million ringgit which is about $2.5 million dollars">
                         </div>
                         <div class="newscontent">
-                              <h1>Goal attainment and youth aspirations are not aligned : Data proves</h1>
+                              <h1>Malaysia enforces ban on social media accounts for children younger than 16</h1>
                         </div>
                   </div>
                   <div class="news">
                         <div class="newsimage">
-                              <img src="dasboard1/ent2.jpg">
+                              <img src="uncle/data_pic_child.jfif" alt="A child playing" abbr="According to the data, the proportion of children in the 6-23-month age group receiving an adequate diet stood at 15.3% in NFHS-6, up from 11% in NFHS-5. Image used for representational purposes only. ">
                         </div>
                         <div class="newscontent">
-                              <h1>Congress says Great Nicobar project endangers UNESCO-designated biosphere reserve</h1>
+                              <h1>Only 15.3% children aged 6-23 months receive adequate diet: NFHS-6</h1>
                         </div>
                   </div>
                   <div class="news">
                         <div class="newsimage">
-                              <img src="dasboard1/ent3.jfif">
+                              <img src="uncle/paytm.jfif" alt="Representative image. " abbr="Representative image. ">
                         </div>
                         <div class="newscontent">
-                              <h1>Elon Musk loses blockbuster OpenAI suit as jury says too late</h1>
+                              <h1>UPI transactions hit record high of ₹29.9 lakh crore in May</h1>
                         </div>
                   </div>
             </div>
@@ -250,177 +206,48 @@
 
       </div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       <div class="footer">
 
             <button onclick="light()">
                   <p>Light Theme</p>
             </button>
+            
             <button onclick="dark()">
                   <p>Dark Theme</p>
             </button>
 
       </div>
-
-      <script>
-
-            function light() {
-
-                  //common
-
-                  document.body.style.backgroundColor = "white";
-                  document.body.style.color = "black";
-                  document.getElementById("topframe").style.backgroundColor = "white";
-                  document.getElementById("topframe").style.color = "black";
-                  document.getElementById("mainframe").style.color = "black";
-                  document.getElementById("mainframe").style.backgroundColor = "white";
-
-                  //topframe
-
-                  let newsElements = document.getElementsByClassName("news");
-                  for (let i = 0; i < newsElements.length; i++) {
-                        newsElements[i].style.color = "black";
-                        newsElements[i].style.backgroundColor = "white";
-                  }
-                  let parts1 = document.getElementsByClassName("partone");
-                  for (let i = 0; i < parts1.length; i++) {
-                        parts1[i].style.color = "black";
-                        parts1[i].style.backgroundColor = "white";
-                        parts1[i].style.borderColor = "black";
-                  }
-                  let parts2 = document.getElementsByClassName("parttwo");
-                  for (let i = 0; i < parts2.length; i++) {
-                        parts2[i].style.color = "black";
-                        parts2[i].style.backgroundColor = "white";
-                        parts2[i].style.borderColor = "black";
-                  }
-                  let parts3 = document.getElementsByClassName("partthree");
-                  for (let i = 0; i < parts3.length; i++) {
-                        parts3[i].style.color = "black";
-                        parts3[i].style.backgroundColor = "white";
-                        parts3[i].style.borderColor = "black";
-                  }
-
-                  //middle frame
-
-                  let internationalNewsElements = document.getElementsByClassName("internationalnews");
-                  for (let i = 0; i < internationalNewsElements.length; i++) {
-                        internationalNewsElements[i].style.color = "black";
-                        internationalNewsElements[i].style.backgroundColor = "white";
-                        internationalNewsElements[i].style.borderColor = "black";
-                  }
-                  let nationalNewsElements = document.getElementsByClassName("nationalnews");
-                  for (let i = 0; i < nationalNewsElements.length; i++) {
-                        nationalNewsElements[i].style.color = "black";
-                        nationalNewsElements[i].style.backgroundColor = "white";
-                        nationalNewsElements[i].style.borderColor = "black";
-                  }
-                  let sportsNewsElements = document.getElementsByClassName("sportsnews");
-                  for (let i = 0; i < sportsNewsElements.length; i++) {
-                        sportsNewsElements[i].style.color = "black";
-                        sportsNewsElements[i].style.backgroundColor = "white";
-                        sportsNewsElements[i].style.borderColor = "black";
-                  }
-                  let entertainmentNewsElements = document.getElementsByClassName("entertainmentnews");
-                  for (let i = 0; i < entertainmentNewsElements.length; i++) {
-                        entertainmentNewsElements[i].style.color = "black";
-                        entertainmentNewsElements[i].style.backgroundColor = "white";
-                        entertainmentNewsElements[i].style.borderColor = "black";
-                  }
-
-                  // clock and network status
-
-                  let clockElement = document.getElementById("clock");
-                  clockElement.style.color = "black";
-                  clockElement.style.backgroundColor = "white";
-
-                  let networkStatusElement = document.getElementById("network-status");
-                  networkStatusElement.style.color = "black";
-                  networkStatusElement.style.backgroundColor = "white";
-
-
-            }
-
-            function dark() {
-
-                  //common
-
-                  document.body.style.backgroundColor = "black";
-                  document.body.style.color = "white";
-                  document.getElementById("topframe").style.backgroundColor = "black";
-                  document.getElementById("topframe").style.color = "white";
-                  document.getElementById("mainframe").style.backgroundColor = "black";
-                  document.getElementById("mainframe").style.color = "white";
-                  let newsElements = document.getElementsByClassName("news");
-                  for (let i = 0; i < newsElements.length; i++) {
-                        newsElements[i].style.color = "white";
-                        newsElements[i].style.backgroundColor = "black";
-                        newsElements[i].style.borderColor = "white";
-                  }
-
-
-                  //topframe 
-
-                  let parts1 = document.getElementsByClassName("partone");
-                  for (let i = 0; i < parts1.length; i++) {
-                        parts1[i].style.color = "white";
-                        parts1[i].style.backgroundColor = "black";
-                        parts1[i].style.borderColor = "white";
-                  }
-                  let parts2 = document.getElementsByClassName("parttwo");
-                  for (let i = 0; i < parts2.length; i++) {
-                        parts2[i].style.color = "white";
-                        parts2[i].style.backgroundColor = "black";
-                        parts2[i].style.borderColor = "white";
-                  }
-                  let parts3 = document.getElementsByClassName("partthree");
-                  for (let i = 0; i < parts3.length; i++) {
-                        parts3[i].style.color = "white";
-                        parts3[i].style.backgroundColor = "black";
-                        parts3[i].style.borderColor = "white";
-                  }
-
-                  // main frame
-
-                  let internationalNewsElements = document.getElementsByClassName("internationalnews");
-                  for (let i = 0; i < internationalNewsElements.length; i++) {
-                        internationalNewsElements[i].style.color = "white";
-                        internationalNewsElements[i].style.backgroundColor = "black";
-                        internationalNewsElements[i].style.borderColor = "white";
-                  }
-                  let nationalNewsElements = document.getElementsByClassName("nationalnews");
-                  for (let i = 0; i < nationalNewsElements.length; i++) {
-                        nationalNewsElements[i].style.color = "white";
-                        nationalNewsElements[i].style.backgroundColor = "black";
-                        nationalNewsElements[i].style.borderColor = "white";
-                  }
-                  let sportsNewsElements = document.getElementsByClassName("sportsnews");
-                  for (let i = 0; i < sportsNewsElements.length; i++) {
-                        sportsNewsElements[i].style.color = "white";
-                        sportsNewsElements[i].style.backgroundColor = "black";
-                        sportsNewsElements[i].style.borderColor = "white";
-                  }
-                  let entertainmentNewsElements = document.getElementsByClassName("entertainmentnews");
-                  for (let i = 0; i < entertainmentNewsElements.length; i++) {
-                        entertainmentNewsElements[i].style.color = "white";
-                        entertainmentNewsElements[i].style.backgroundColor = "black";
-                        entertainmentNewsElements[i].style.borderColor = "white";
-                  }
-
-                  // clock and network status
-
-                  let clockElement = document.getElementById("clock");
-                  clockElement.style.color = "white";
-                  clockElement.style.backgroundColor = "black";   
-
-                  let net = document.getElementById("network-status");
-                  net.style.color = "white";
-                  net.style.backgroundColor = "black";      
-
-            }
-            
-
-
-      </script>
+      <script src="javascript_livision/contrast_upd/dark.js"></script>
+      <script src="javascript_livision/contrast_upd/light.js"></script>
+      <script src="javascript_livision/clock.js"></script>
+      <script src="javascript_livision/network.js"></script>
 
 </body>
 
