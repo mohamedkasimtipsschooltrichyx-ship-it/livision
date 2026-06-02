@@ -1,0 +1,206 @@
+ /* Base layout */
+        body {
+            font-family: 'Trebuchet MS', Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            transition: background-color 0.5s ease, color 0.5s ease;
+
+        }
+
+        .card {
+            border-radius: 15px;
+            padding: 10px;
+            margin: 20px;
+            text-align: center;
+            border: 2px solid #fff;
+        }
+
+        .topframe {
+            background-color: #fff;
+            color: #0f0c0c;
+            border-radius: 15px;
+            padding: 10px;
+            margin: 20px;
+            display: flex;
+            flex-direction: rows;
+            align-items: center;
+        }
+
+        .mainframe {
+            background-color: #000;
+            color: #fff;
+            height:auto;
+        }
+
+        .partone,
+        .parttwo,
+        .partthree,
+        footer {
+            background-color: #000;
+            color: #fff;
+        }
+
+        a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer {
+            display: grid;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Contrast buttons */
+        .contrast {
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .contrast button {
+            margin: 5px;
+            padding: 8px 12px;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .contrast button:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            animation: pulse 1s justify;
+        }
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+            }
+            100% {
+                transform: scale(1.2);
+                box-shadow: 0 0 5px rgba(146, 98, 98, 0.5);
+            }
+        }
+
+        /* Theme styles */
+        body.theme-normal {
+            background-color: #fff;
+            color: #000;
+        }
+
+        body.theme-cyberpunk {
+            background-color: #0ff;
+            color: #f0f;
+            font-family: 'Courier New', monospace;
+        }
+
+        body.theme-cyberpunk a {
+            color: #0ff;
+        }
+
+        body.theme-cyberpunk .card {
+            border-color: rgb(255, 255, 255);
+        }
+        body.theme-cyberpunk .contrast button {
+            background-color: #0ff;
+            color: rgb(0, 0, 0);
+        }
+        body.theme-cyberpunk p {
+            color: rgb(0, 242, 255);
+        }
+
+        body.theme-radioactive {
+            background-color: #1a1a1a;
+            color: #39ff14;
+            font-family: 'Arial Black', Arial, sans-serif;
+        }
+
+        body.theme-radioactive a {
+            color: #39ff14;
+        }
+
+        body.theme-radioactive .card {
+            border-color: #39ff14;
+            color: #39ff14;
+        } 
+
+        body.theme-radioactive .contrast button {
+            background-color: #39ff14;
+            color: #1a1a1a;
+        }
+
+            body.theme-radioactive p {
+                color: #39ff14;
+            }
+
+
+        body.theme-solarflare {
+            background-color: #ff4500;
+            color: #de570e;
+            font-family: Georgia, sans-serif;
+        }
+
+        body.theme-solarflare .card {
+            border-color: #de570e;
+            color: #de570e;
+        }
+            body.theme-solarflare .contrast button {
+                background-color: #000000;
+                color: #ff4500;
+                border-color: #ffffff;
+            }
+            body.theme-solarflare p {
+                color: #de570e;
+            }
+
+        body.theme-solarflare a {
+            color: #de570e;
+        }
+
+        body.theme-synthwave {
+            background-color:#FFD200;
+            color: #000000;
+            font-family: Helvetica, Arial, sans-serif;
+        }
+
+        body.theme-synthwave a {
+            color: #000000;
+        }
+
+        body.theme-synthwave .card {
+            border-color: #000000;
+            color: #000000;
+            background-color: #FFD200;
+        }
+            body.theme-synthwave .contrast button {
+                background-color: #000000;
+                color: #FFD200;
+                border-color: #000000;
+            }
+            body.theme-synthwave p {
+                color: #000000;
+                
+            }
+
+        body.theme-minimalist {
+            background-color: #f0f0f0;
+            color: #333;
+            font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body.theme-minimalist a {
+            color: #333;
+            background-color:#F9F6F1;
+        }
+        body.theme-minimalist .card {
+            border-color: #333;
+            background-color: #fff;
+        }
+        body.theme-minimalist .contrast button {
+            background-color: #333;
+            color: #f0f0f0;
+        }
+        body.theme-minimalist p {
+            color: #333;
+        }
