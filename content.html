@@ -4,50 +4,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Content</title>
+    <link rel="stylesheet" href="css/styling.css">
 </head>
 
-<body background="fah.png">
+<body class="theme-normal">
     <div class="topframe">
-
-        <div class="partone">
-            <div class="b">
-                <p>Content</p>
-            </div>
-            <div class="a">
-                <a href="index.html">Home</a>
-            </div>
-            <div class="a">
-                <a href="portfolio.html">Portfolio</a>
-            </div>
-            <div class="a">
-                <a href="contact.html">Contact</a>
-            </div>
+        <div class="partone card">
+            <p>Content</p>
+            <a href="index.html">Home</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
         </div>
 
-
-        <div class="parttwo">
-            <p class="b">Author: Mohamed Kasim</p>
+        <div class="parttwo card">
+            <p>Author: Mohamed Kasim</p>
         </div>
 
-        <div class="partthree">
-            <p class="c">You imagine, we create</p>
+        <div class="partthree card">
+            <p>You imagine, we create</p>
         </div>
 
+        <!-- Theme buttons moved here -->
+        
     </div>
 
+    <div class="mainframe card">
+        <ul>
+            <li>
+                <p>INTERNATIONAL NEWS</p>
+            </li>
+            <li>
+                <p>NATIONAL NEWS : INDIA</p>
+            </li>
+            <li>
+                <p>SPORTS NEWS</p>
+            </li>
+            <li>
+                <p>OTHER NEWS : BUSINESS , ENVIRONMENT, ENTERTAINMENT NEWS</p>
+            </li>
+        </ul>
+    </div>
 
-
-
-        <div class="mainframe">
-            <ul>
-                <li><p>INTERNATIONAL NEWS</p></li>
-                <li><p>NATIONAL NEWS : INDIA</p></li>
-                <li><p>SPORTS NEWS</p></li>
-                <li><p>OTHER NEWS : BUSINESS , ENVIRONMENT, ENTERTAINMENT NEWS</p></li>
-            </ul>
+    <footer class="card">
+        <div class="credit">
+            <p>Credits: The Hindu News Paper</p>
         </div>
+        <div class="clock">
+            <p id="time"></p>
+        </div>
+        <div class="networkstatus">
+            <p id="status"></p>
+        </div>
+        <div class="date">
+            <p id="date"></p>
+        </div>
+
+        <div class="contrast">
+            <button data-theme="theme-cyberpunk">Cyberpunk</button>
+            <button data-theme="theme-normal">Normal</button>
+            <button data-theme="theme-radioactive">Radioactive Wasteland</button>
+            <button data-theme="theme-solarflare">Solar Flare</button>
+            <button data-theme="theme-synthwave">Sunset Vibe Contrast</button>
+            <button data-theme="theme-minimalist">Minimalist Contrast</button>
+        </div>
+    </footer>
+
+    <script>
+        // Clock + Date + Network
+        function updateTime() {
+            document.getElementById('time').textContent = new Date().toLocaleTimeString();
+        }
+        function updateDate() {
+            document.getElementById('date').textContent = new Date().toLocaleDateString();
+        }
+        function updateNetworkStatus() {
+            const status = navigator.onLine ? 'Online' : 'Offline';
+            document.getElementById('status').textContent = `Network Status: ${status}`;
+        }
+        setInterval(updateTime, 1000);
+        setInterval(updateDate, 60000);
+        window.addEventListener('online', updateNetworkStatus);
+        window.addEventListener('offline', updateNetworkStatus);
+        updateTime(); updateDate(); updateNetworkStatus();
+
+        // Theme switching
+        const buttons = document.querySelectorAll(".contrast button");
+        buttons.forEach(btn => {
+            btn.addEventListener("click", () => {
+                // Remove any existing theme-* class
+                document.body.classList.forEach(cls => {
+                    if (cls.startsWith("theme-")) {
+                        document.body.classList.remove(cls);
+                    }
+                });
+                // Add the new theme class
+                document.body.classList.add(btn.dataset.theme);
+            });
+        });
+    </script>
+
 </body>
 
 </html>
